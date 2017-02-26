@@ -1,21 +1,18 @@
 package gui;
 
-import org.lwjgl.input.Mouse;
 import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.Graphics;
-import org.newdawn.slick.Image;
 import org.newdawn.slick.Input;
 import org.newdawn.slick.SlickException;
 import org.newdawn.slick.state.GameState;
 import org.newdawn.slick.state.StateBasedGame;
 
-
-public class Menu implements GameState {
+public class Options implements GameState {
 
 	@Override
 	public void mouseClicked(int arg0, int arg1, int arg2, int arg3) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
@@ -29,10 +26,11 @@ public class Menu implements GameState {
 		// TODO Auto-generated method stub
 
 	}
-	
-	public void mousePressed(int one, int two, int three, StateBasedGame sbg) {
+
+	@Override
+	public void mousePressed(int arg0, int arg1, int arg2) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
@@ -158,7 +156,7 @@ public class Menu implements GameState {
 	@Override
 	public void init(GameContainer arg0, StateBasedGame arg1) throws SlickException {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
@@ -168,51 +166,15 @@ public class Menu implements GameState {
 	}
 
 	@Override
-	public void render(GameContainer gc, StateBasedGame sbg, Graphics g) throws SlickException {
-		// TODO Auto-generated method stub		
-		
-		// Background
-		Image bg = new Image("/rec/bg.png");
-		g.drawImage(bg, 0, 0);
-		
-		//ChangeLog Box
-		Image changeLog = new Image("/rec/changelog.png");
-		
-		//Logo
-		int x = (Application.WIDTH / 6);
-		int y = (Application.HEIGHT / 8);
-		Image logo = new Image("/rec/logo.png");
-		g.drawImage(logo, x, y);
-		
-		//Buttons
-		Image playButton = new Image("/rec/playButton.png");
-		Image exitButton = new Image("/rec/exitButton.png");
-		Image optionButton = new Image("/rec/optionsButton.png");
-		playButton.draw(x, Application.HEIGHT/2, x+112, Application.HEIGHT/2/4);
-		optionButton.draw(x, Application.HEIGHT/2+112, x+112, Application.HEIGHT/2/4);
-		exitButton.draw(x, Application.HEIGHT/2+224, x+112, Application.HEIGHT/2/4);
-		
-		
-		//Reference Lines
-		g.drawLine(Application.WIDTH/2, 0, Application.WIDTH/2, Application.HEIGHT); // Down the middle
-		g.drawLine(Application.WIDTH/3, 0, Application.WIDTH/3, Application.HEIGHT); // 3rd of screen - left
-		g.drawLine(Application.WIDTH/4, 0, Application.WIDTH/4, Application.HEIGHT); // 4th of screen - left
-		g.drawLine(Application.WIDTH/5, 0, Application.WIDTH/5, Application.HEIGHT); // 5th of screen - left
-		g.drawLine(Application.WIDTH/6, 0, Application.WIDTH/6, Application.HEIGHT); // 6th of screen - left
-		g.drawLine(0, Application.HEIGHT/2, Application.WIDTH, Application.HEIGHT/2); //Half of vertial screen
-		
+	public void render(GameContainer arg0, StateBasedGame arg1, Graphics arg2) throws SlickException {
+		// TODO Auto-generated method stub
+
 	}
 
 	@Override
-	public void update(GameContainer gb, StateBasedGame sbg, int charlie) throws SlickException {
+	public void update(GameContainer arg0, StateBasedGame arg1, int arg2) throws SlickException {
 		// TODO Auto-generated method stub
-		
-	}
 
-	@Override
-	public void mousePressed(int arg0, int arg1, int arg2) {
-		// TODO Auto-generated method stub
-		
 	}
 
 }
