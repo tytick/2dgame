@@ -1,6 +1,5 @@
 package gui;
 
-import org.lwjgl.input.Mouse;
 import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.Graphics;
 import org.newdawn.slick.Image;
@@ -13,9 +12,9 @@ import org.newdawn.slick.state.StateBasedGame;
 public class Menu implements GameState {
 
 	@Override
-	public void mouseClicked(int arg0, int arg1, int arg2, int arg3) {
+	public void mouseClicked(int a, int b, int c, int d) {
 		// TODO Auto-generated method stub
-		
+	
 	}
 
 	@Override
@@ -29,8 +28,8 @@ public class Menu implements GameState {
 		// TODO Auto-generated method stub
 
 	}
-	
-	public void mousePressed(int one, int two, int three, StateBasedGame sbg) {
+	@Override
+	public void mousePressed(int one, int two, int three) {
 		// TODO Auto-generated method stub
 		
 	}
@@ -72,9 +71,9 @@ public class Menu implements GameState {
 	}
 
 	@Override
-	public void keyPressed(int arg0, char arg1) {
+	public void keyPressed(int a, char b) {
 		// TODO Auto-generated method stub
-
+	
 	}
 
 	@Override
@@ -146,7 +145,7 @@ public class Menu implements GameState {
 	@Override
 	public void enter(GameContainer arg0, StateBasedGame arg1) throws SlickException {
 		// TODO Auto-generated method stub
-
+	
 	}
 
 	@Override
@@ -167,7 +166,7 @@ public class Menu implements GameState {
 
 	}
 
-	@Override
+	
 	public void render(GameContainer gc, StateBasedGame sbg, Graphics g) throws SlickException {
 		// TODO Auto-generated method stub		
 		
@@ -206,13 +205,6 @@ public class Menu implements GameState {
 	@Override
 	public void update(GameContainer gb, StateBasedGame sbg, int charlie) throws SlickException {
 		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void mousePressed(int arg0, int arg1, int arg2) {
-		// TODO Auto-generated method stub
-		
 	}
 
 }
