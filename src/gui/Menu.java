@@ -191,7 +191,7 @@ public class Menu implements GameState {
 		optionButton.draw(x, Application.HEIGHT/2+112, x+112, Application.HEIGHT/2/4);
 		exitButton.draw(x, Application.HEIGHT/2+224, x+112, Application.HEIGHT/2/4);
 		
-		
+		/*
 		//Reference Lines
 		g.drawLine(Application.WIDTH/2, 0, Application.WIDTH/2, Application.HEIGHT); // Down the middle
 		g.drawLine(Application.WIDTH/3, 0, Application.WIDTH/3, Application.HEIGHT); // 3rd of screen - left
@@ -199,7 +199,7 @@ public class Menu implements GameState {
 		g.drawLine(Application.WIDTH/5, 0, Application.WIDTH/5, Application.HEIGHT); // 5th of screen - left
 		g.drawLine(Application.WIDTH/6, 0, Application.WIDTH/6, Application.HEIGHT); // 6th of screen - left
 		g.drawLine(0, Application.HEIGHT/2, Application.WIDTH, Application.HEIGHT/2); //Half of vertial screen
-		
+		*/
 	}
 
 	@Override
